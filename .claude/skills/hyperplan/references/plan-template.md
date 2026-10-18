@@ -34,7 +34,7 @@
 ```markdown
 # <Project name>: Build Plan
 
-> Tier: <tier> · Judge score: <avg>/10 · Generated: <date>
+> Tier: <tier> · Team: <n> specialists (<opus count> opus, <sonnet count> sonnet, <haiku count> haiku) · Judge score: <avg>/10 · Generated: <date>
 
 ## Known Weaknesses
 <only if the gate failed after 2 loops: list the failing dimensions and why>
@@ -98,6 +98,9 @@
 ## 15. Open Questions
 | Question | Why it matters | Default if unanswered | Owner |
 
-## 16. Hard Truths
+## 16. Team Record
+<staffing table from staffing.md: role, approved model and effort, reason · debates held and outcomes · unanswered board requests>
+
+## 17. Hard Truths
 <unavoidable tradeoffs, hidden costs, and what this plan deliberately does not do>
 ```

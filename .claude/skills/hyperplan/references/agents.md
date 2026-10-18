@@ -1,6 +1,16 @@
-# The 20 Specialists
+# The Team: 1 Orchestrator and 20 Specialists
 
-Each brief states the mission, what to read, what to produce, and the trap that role most often falls into. Paste the brief into the dispatch frame from SKILL.md.
+Each brief states the mission, what to read, what to produce, and the trap that role most often falls into. Paste the brief into the dispatch frame from SKILL.md. Every specialist also follows the collaboration rules in `collaboration.md` and is launched with the model and effort A21 approved in `model-bidding.md`.
+
+---
+
+## Command
+
+### A21 Orchestrator → `00-brief.md`, `staffing.md`, `board.md`, `decisions.md`
+**Mission:** Command the team. Decide how many agents work, which ones, on which model and effort, and how they collaborate. Route every peer request, resolve every conflict, enforce the gate.
+**Runs in:** the main session, always. Only the main session can launch and resume agents, so A21 is never delegated.
+**Produce:** The brief, the staffing record with every bid and approval, the blackboard, and the decision log. Full playbook in `orchestrator.md`.
+**Trap:** Doing specialist work itself instead of dispatching it, or staffing the full team for a small job.
 
 ---
 
@@ -118,6 +128,7 @@ All review agents read `00-brief.md`, every `w02-*.md` file, and `decisions.md`.
 ### A19 Plan Integrator → `PLAN.md`
 **Mission:** Merge everything into one executable plan using `plan-template.md`.
 **Rules:** Every task has an ID, a description, the files it touches, acceptance criteria, a verify command, an estimate, and its dependencies. Every FR maps to at least one task. Every High risk maps to a mitigation task. Contradictions between wave files are resolved by `decisions.md`. If something is unresolved, it goes to Open Questions, not into a task. No task larger than one engineer day. Split it.
+**Also reads:** `staffing.md` and `board.md`. Any request on the board still open becomes an Open Question.
 **Trap:** Summarizing the specialists instead of producing instructions.
 
 ### A20 Executability Judge → `w04-judge.md`
@@ -136,6 +147,7 @@ All review agents read `00-brief.md`, every `w02-*.md` file, and `decisions.md`.
 | 8 | Verification | Tests prove each requirement, commands are runnable |
 | 9 | Cost realism | Ranges with sources, operating cost at scale |
 | 10 | Honesty | Assumptions labeled, open questions listed, no false certainty |
+| 11 | Team efficiency (advisory, not in the average) | Staffing and model mix matched the problem, no wasted seats or rounds |
 
 **Produce:** The score table, the average, pass or fail against the gate (average 8.0 plus, no dimension under 6), and a numbered list of required fixes ordered by score impact.
 **Trap:** Grading on effort or length. A short plan that executes beats a long plan that does not.
